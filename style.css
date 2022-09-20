@@ -60,7 +60,7 @@ width: 150px;
 .nav-links ul li:hover::after{
     width: 100%;
 }
-.text box{
+.text-box{
     width: 90%;
     color:#fff;
     position: absolute;
