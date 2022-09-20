@@ -10,12 +10,17 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css"
+    />
   </head>
   <body>
     <section class="header">
       <nav>
         <a href="index.html"><img src="images/logofinal.png" /></a>
-        <div class="nav-links">
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
           <ul>
             <li><a href="">HOME</a></li>
             <li><a href="">ABOUT</a></li>
@@ -24,6 +29,7 @@
             <li><a href="">CONTACT</a></li>
           </ul>
         </div>
+        <i class="fa fa-bars" onclick="showMenu()""></i>
       </nav>
       <div class="text-box">
         <h1>Oorza Consulting</h1>
@@ -34,5 +40,17 @@
         <a href="" class="visitlink">Visit Us For Additional Info</a>
       </div>
     </section>
+<!---------------JAVASCRIPT FOR TOGGLE MENU-------------->
+    <script>
+
+      var navLinks = document.getElementById("navLinks");
+      function showMenu(){
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu(){
+        navLinks.style.right = "-200px";
+      }
+    </script>
   </body>
 </html>
