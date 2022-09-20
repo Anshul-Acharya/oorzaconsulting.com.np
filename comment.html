@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale" />
+    <title>Oorza Consulting</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+  </head>
+  <body>
+    <section class="subheader">
+      <nav>
+        <a href="index.html"><img src="images/logofinal.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">SUGGESTIONS</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()""></i>
+      </nav>
+      <h1>Suggestions</h1>
+      
+    </section>
+
+  <section>
+
+    
+    <div class="comment-box">
+        <h3>Leave A Comment</h3>
+        <form class="comment-form">
+            <input type="text" placeholder="Enter Name">
+            <input type="text" placeholder="Enter Email">
+            <textarea row="5" placeholder="Your Comment">
+       </textarea>
+       <button type="submit" class="visitlink">Post Comment</button>
+        </form>
+    </div>
+
+  </section>
+
+  
+
+  
+
+  <!----------------FOOTER------------------------->
+
+  <section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem ut aspernatur quis. Eius doloribus neque reprehenderit, <br>quod sapiente amet aspernatur, autem rerum officiis voluptatem unde eligendi dolor accusamus, totam reiciendis!</p>
+
+    <div class="icons">
+      <i class="fa-brands fa-facebook"></i>
+    </div>
+    <p><i class="fa-brands fa-mdb"></i></i>Anshul Raj Acharya</p>
+  </section>
+
+
+
+<!---------------JAVASCRIPT FOR TOGGLE MENU-------------->
+    <script>
+
+      var navLinks = document.getElementById("navLinks");
+      function showMenu(){
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu(){
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
