@@ -243,8 +243,8 @@ h4{
 .testimonials{
     width: 90%;
     margin: auto;
-    padding-top: 100px;
     text-align: center;
+    padding-top: 100px;
     }
 
 .testimonials .row{
@@ -275,9 +275,9 @@ h4{
     }
 
 .testimonials-col p{
+
     padding: 0;
-    text-align: left;
-   
+    text-align:left;
    
 }
 
