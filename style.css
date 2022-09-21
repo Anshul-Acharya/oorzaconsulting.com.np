@@ -267,17 +267,19 @@ h4{
 }
 
 .testimonials-col img{
-    height: 40px;
-    margin-left: 40px;
-    margin-right: 5px;
+    height: 45px;
+    margin-left: 25px;
+    margin-right: 1px;
     border-radius: 50%;
     float: left;
     }
 
 .testimonials-col p{
 
-    padding: 0;
-    text-align:left;
+    padding: 10px;
+    text-align: left;
+    overflow: hidden;
+    
    
 }
 
