@@ -256,7 +256,7 @@ h4{
     margin-bottom: 5%;
     text-align: left;
     background: #e7d9d9;
-    padding: 25px; 
+    padding: 30px; 
     cursor: pointer;
     display: flex;
 }
@@ -269,7 +269,7 @@ h4{
 }
 
 .testimonials-col p{
-    padding: 0;
+    padding: 10;
     text-align: left;
 }
 
