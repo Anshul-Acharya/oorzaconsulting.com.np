@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+ 
   </head>
   <body>
     <section class="subheader">
@@ -33,24 +34,26 @@
 <!-------------------------------------------------->
 <section>   
 
+  
 
-<div class="photo-gallery">
-<div class="col">
+<div class="container">
+  <div class="image-container">
+<div class="image">
  <img src="images/about.jpg" alt=""></div>
-<div class="col">
+<div class="image">
 <img src="images/background2.jpg" alt=""></div>
-<div class="col">
+<div class="image">
 <img src="images/banner.png" alt=""></div>
-<div class="col">
+<div class="image">
 <img src="images/contact.jpg" alt=""></div>
-<div class="col">
+<div class="image">
 <img src="images/homepage.jpg" alt=""></div>
-<div class="col">
+<div class="image">
 <img src="images/placement.jpg" alt=""></div>
-<div class="col">
+<div class="image">
 <img src="images/background2.jpg" alt=""></div>
-<div class="col">
-<img src="face2.jpg" alt=""></div>
+<div class="image">
+<img src="images/face2.jpg" alt=""></div>
 </div>
 <div class="popup-image">
     <span>&times;</span>
@@ -58,7 +61,17 @@
 
 
 </div>
-
+<script>
+  document.querySelectorAll('.image-container img').forEach(image =>{
+    image.onclick = () =>{
+      document.querySelector('.popup-image').style.display = 'block';
+      document.querySelector('.popup-image img').src = image.getAttribute('src');
+    }
+  });
+    document.querySelector('.popup-image span').onclick = () =>{
+      document.querySelector('.popup-image').style.display= 'none';
+    }
+</script>
 
 </section>
 
