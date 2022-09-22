@@ -139,6 +139,17 @@ nav .fa{
     }
 }
 
+@media(max-width: 700px ){
+    .footer h4{
+        font-size: 20px;
+        }
+    .footer p{
+        font-size: 10px;
+        text-align: center;
+    }
+
+}
+
 /*******Services***********/
 
 .services{
